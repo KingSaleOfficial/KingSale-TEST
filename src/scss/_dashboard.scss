@@ -1,0 +1,126 @@
+.side-navigation-panel-select-option span {
+  color: #9f9f9f;
+  font-size: 15px;
+  svg {
+    font-size: 20px;
+  }
+}
+.side-navigation-panel-select-option-selected {
+  background-color: #23252e !important;
+  span {
+    color: #fabe25 !important;
+  }
+}
+.side-navigation-panel-select-option:hover {
+  background-color: #23252e !important;
+  span {
+    color: #fabe25 !important;
+  }
+}
+// .side-navigation-panel *, .side-navigation-panel:after, .side-navigation-panel:before {
+//     border-color: #FABE25 !important;
+// }
+.side-navigation-panel-select-inner-option {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 40px !important;
+
+  svg {
+    font-size: 20px !important;
+  }
+}
+.side-navigation-panel-select-inner-option span {
+  color: #9f9f9f;
+  font-size: 15px !important;
+}
+.side-navigation-panel-select-inner-option {
+  &:hover {
+    background-color: #23252e !important;
+    span {
+      color: #fabe25 !important;
+    }
+  }
+}
+.side-navigation-panel-select-inner-option-selected {
+  background-color: #23252e !important;
+  span {
+    color: #fabe25 !important;
+  }
+}
+
+// .side-navigation-panel{
+//     border-color: #23252e !important
+//     ;
+// }
+.side-navigation-panel *,
+.side-navigation-panel:after,
+.side-navigation-panel:before {
+  border-color: #15161c !important;
+}
+
+.side-navigation-panel
+  .side-navigation-panel-select
+  .side-navigation-panel-select-wrap
+  .side-navigation-panel-select-option {
+  padding: 15px !important;
+}
+
+.side-navigation-panel
+  .side-navigation-panel-select
+  .side-navigation-panel-select-wrap
+  .side-navigation-panel-select-option-selected {
+  border-color: #fabe25 !important;
+}
+.side-navigation-panel
+  .side-navigation-panel-select
+  .side-navigation-panel-select-wrap
+  .side-navigation-panel-select-option:hover {
+  border-color: #fabe25 !important;
+}
+.TabButtonsBox {
+  border-bottom: 1px solid #191f36;
+  button {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    margin-right: 4px;
+    color: #fff;
+    span {
+      &:last-child {
+        font-weight: 400;
+        padding-left: 5px;
+        color: #fff;
+      }
+    }
+    &.active {
+      background-color: transparent;
+      color: #fff;
+      border-color: #c4280d;
+    }
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border-color: #c4280d;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .TabButtonsBox {
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+  }
+  .TabButtonsBox button {
+    white-space: nowrap;
+  }
+}
+
+img.logoimg {
+  width: 150px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

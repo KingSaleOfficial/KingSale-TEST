@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,900;1,500;1,700;1,900&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #090C16  !important;
+}
+
+.animationbox {
+  position: absolute;
+  width: 80%;
+  height: 96px;
+  bottom: -30px;
+  left: 0;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateY(-20%) scale(1.4);
+    transform: translateY(-20%) scale(1.4);
+  }
+  to {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes animation {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateY(-20%) scale(1.4);
+    transform: translateY(-20%) scale(1.4);
+  }
+  to {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+
+.jss8 {
+  background-color: #000000 !important;
+}
+
+button.slick-arrow.slick-prev {
+  font-size: 0;
+  z-index: 9;
+}
+
+button.slick-arrow.slick-next {
+  font-size: 0;
+}
+
+button.slick-arrow.slick-prev::after {
+  display: none;
+}
+
+button.slick-arrow.slick-next::after {
+  display: none;
+}
+
+.appBar {
+  left: 0;
+  right: auto;
+  width: calc(100% - 240px) !important;
+  z-index: 1201;
+  max-width: 100%;
+}
+
+.appBarCloses {
+  left: 0;
+  right: auto;
+  width: calc(100% - 80px) !important;
+  z-index: 1201;
+  max-width: 100%;
+}
+
+.arrowButton {
+  position: absolute;
+  right: -10px;
+  background-color: #fff;
+}
+
+.ActiveLink {
+  background-color: #23252E !important;
+  border-radius: 15px 0 0 15px !important;
+  position: relative;
+}
+
+.ActiveLink.menuLink:hover {
+  background-color: #23252E !important;
+  z-index: 99 !important;
+  border-radius: 15px 0 0 15px !important;
+}
+
+.menuLink {
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  margin-top: 7px !important;
+}
+
+.menuLink:hover {
+  background-color: rgba(255, 255, 255, 0.11) !important;
+  z-index: 99 !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.mainBox h5 {
+  color: #FABE25;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.mainBox h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.mainBox a {
+  color: #FABE25;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mainBox td {
+  color: #9F9F9F;
+  font-size: 14px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.mainBox td:last-child {
+  text-align: right;
+}
+
+.mainBox p {
+  color: #9F9F9F;
+  width: 100%;
+  font-size: 14px;
+}
+
+.mainBox label {
+  color: #9F9F9F;
+  padding: 0;
+  line-height: 33px;
+  font-size: 14px;
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.tabButtons button {
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  height: 50px;
+  padding: 2px 20px;
+  position: relative;
+  font-size: 12px;
+  background-color: #292b35;
+}
+
+.tabButtons button.active {
+  background-color: #e8424c;
+  color: #fff;
+}
+
+.tabButtons button:hover {
+  background-color: #e8424c;
+  color: #fff;
+}
+
+.tabButtons button:last-child {
+  margin-left: 50px !important;
+}
+
+.tabButtons button:last-child::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: -50px;
+  width: 1px;
+  background-color: #fabe25;
+}
+
+@media (max-width: 960px) {
+  .appBar,
+  .appBarCloses {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabButtons button:first-child {
+    margin-right: 0px !important;
+    margin-bottom: 15px;
+  }
+  .tabButtons:first-child {
+    margin-right: 0px !important;
+  }
+  .tabButtons button:last-child {
+    margin-left: 0px !important;
+    width: 100%;
+  }
+  .tabButtons button:last-child::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: -50px;
+    width: 1px;
+    background-color: #fabe25;
+  }
+  .tabButtons button:first-child {
+    margin-right: 0px !important;
+    width: 100%;
+  }
+}
+
+.slick-slide img {
+  display: initial;
+}
+
+.tokenSpecsList {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+
+.tokenSpecsList li {
+  list-style: none;
+  position: relative;
+  color: #9F9F9F;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #f6a52d;
+  stroke-linecap: round;
+  -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #e8424c;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.tabButtons button:first-child {
+  margin-right: 50px !important;
+}
+
+.ComingSoon h4 {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  text-shadow: 0px 0px 7px #4a4a4a;
+  color: #FABE25  !important;
+  font-size: 21px !important;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 12px;
+  font-weight: 600;
+  padding: 12px;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ComingSoon h4 {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    color: #FABE25  !important;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 12px;
+    -webkit-animation: blinker 1s linear infinite;
+            animation: blinker 1s linear infinite;
+    color: "#fff";
+  }
+}
+
+.comingsoonimg {
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.comingsoonimgclose {
+  opacity: 0;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.overlay figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: relative;
+  margin-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.overlay h4 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.overlay p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 19px;
+}
+
+.overlay figure {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.overlay figure img {
+  width: 100%;
+  display: block;
+}
+
+.teamtext-main {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay figure {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.manualBtn {
+  color: #fff;
+  border: 0.5px solid #F6A52D;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.jss336 {
+  color: #fff;
+  width: 100%;
+  border: 0.5px solid #F6A52D;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.side-navigation-panel-select-option span {
+  color: #9f9f9f;
+  font-size: 15px;
+}
+
+.side-navigation-panel-select-option span svg {
+  font-size: 20px;
+}
+
+.side-navigation-panel-select-option-selected {
+  background-color: #23252e !important;
+}
+
+.side-navigation-panel-select-option-selected span {
+  color: #fabe25 !important;
+}
+
+.side-navigation-panel-select-option:hover {
+  background-color: #23252e !important;
+}
+
+.side-navigation-panel-select-option:hover span {
+  color: #fabe25 !important;
+}
+
+.side-navigation-panel-select-inner-option {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 40px !important;
+}
+
+.side-navigation-panel-select-inner-option svg {
+  font-size: 20px !important;
+}
+
+.side-navigation-panel-select-inner-option span {
+  color: #9f9f9f;
+  font-size: 15px !important;
+}
+
+.side-navigation-panel-select-inner-option:hover {
+  background-color: #23252e !important;
+}
+
+.side-navigation-panel-select-inner-option:hover span {
+  color: #fabe25 !important;
+}
+
+.side-navigation-panel-select-inner-option-selected {
+  background-color: #23252e !important;
+}
+
+.side-navigation-panel-select-inner-option-selected span {
+  color: #fabe25 !important;
+}
+
+.side-navigation-panel *,
+.side-navigation-panel:after,
+.side-navigation-panel:before {
+  border-color: #15161c !important;
+}
+
+.side-navigation-panel
+.side-navigation-panel-select
+.side-navigation-panel-select-wrap
+.side-navigation-panel-select-option {
+  padding: 15px !important;
+}
+
+.side-navigation-panel
+.side-navigation-panel-select
+.side-navigation-panel-select-wrap
+.side-navigation-panel-select-option-selected {
+  border-color: #fabe25 !important;
+}
+
+.side-navigation-panel
+.side-navigation-panel-select
+.side-navigation-panel-select-wrap
+.side-navigation-panel-select-option:hover {
+  border-color: #fabe25 !important;
+}
+
+.TabButtonsBox {
+  border-bottom: 1px solid #191f36;
+}
+
+.TabButtonsBox button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  margin-right: 4px;
+  color: #fff;
+}
+
+.TabButtonsBox button span:last-child {
+  font-weight: 400;
+  padding-left: 5px;
+  color: #fff;
+}
+
+.TabButtonsBox button.active {
+  background-color: transparent;
+  color: #fff;
+  border-color: #c4280d;
+}
+
+.TabButtonsBox button:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #c4280d;
+}
+
+@media (max-width: 1024px) {
+  .TabButtonsBox {
+    overflow-x: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .TabButtonsBox button {
+    white-space: nowrap;
+  }
+}
+
+img.logoimg {
+  width: 150px;
+}
+
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+/*# sourceMappingURL=main.css.map */
